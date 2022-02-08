@@ -23,7 +23,7 @@
                 applicationServerKey: 'BPArWEZiWr3R-QwLQs2KR8VY6UUmjlmgBwIh395HTSlLKEpgS-GRo_nlqiSLL72biNDumTFHlzWY3mldPYUVEJQ'
             })
             console.log(JSON.stringify(push))
-            await fetch('/push', {
+            await fetch('/subscription', {
                 method: 'POST',
                 body: JSON.stringify(push),
                 headers: {
