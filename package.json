@@ -2,14 +2,16 @@
   "name": "push",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "push.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node push.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
     "git-init": "^1.0.0",
     "web-push": "^3.4.5"
   }
