@@ -11,6 +11,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, "client")));
 app.use(bodyparser.json);
 
+console.log('Server trying to connect....');
 
 let vapidkeys={
     publicKey: 'BPArWEZiWr3R-QwLQs2KR8VY6UUmjlmgBwIh395HTSlLKEpgS-GRo_nlqiSLL72biNDumTFHlzWY3mldPYUVEJQ',
