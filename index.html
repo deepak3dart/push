@@ -12,7 +12,7 @@
 <body>
     <button onclick="subscribe()">Subscribe</button>
     <script>
-        var push = require('web-push');
+      
         addEventListener('load', async () => {
             let sw = navigator.serviceWorker.register('./sw.js')
             console.log(sw)
@@ -29,9 +29,7 @@
                 privateKey: 'WruLAjunwite52SKUajbOMXRo-M4ktbl3KlSFvVIgCk'
             }
 
-            push.setVapidDetails('mailto:deepak3dart@gmail.com',
-                vapidkeys.publicKey,
-                vapidkeys.privateKey);
+           
         }
     </script>
 </body>

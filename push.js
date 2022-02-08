@@ -38,6 +38,6 @@ app.post('/subscribe', (req, res) => {
   push.sendNotification(subscription, payload).catch(err => console.error(err));
 
 
-})
-  //const port = 5000;
-  //app.listen(port, () => console.log(`server started on port ${port}`));*/
+})*/
+  const port = 5000;
+  app.listen(port, () => console.log(`server started on port ${port}`));
