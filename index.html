@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
@@ -23,7 +24,15 @@
                 applicationServerKey: 'BPArWEZiWr3R-QwLQs2KR8VY6UUmjlmgBwIh395HTSlLKEpgS-GRo_nlqiSLL72biNDumTFHlzWY3mldPYUVEJQ'
             })
             console.log(JSON.stringify(push))
-          
+
+            let vapidkeys = {
+                publicKey: 'BPArWEZiWr3R-QwLQs2KR8VY6UUmjlmgBwIh395HTSlLKEpgS-GRo_nlqiSLL72biNDumTFHlzWY3mldPYUVEJQ',
+                privateKey: 'WruLAjunwite52SKUajbOMXRo-M4ktbl3KlSFvVIgCk'
+            }
+
+            push.setVapidDetails('mailto:deepak3dart@gmail.com',
+                vapidkeys.publicKey,
+                vapidkeys.privateKey);
         }
     </script>
 </body>
