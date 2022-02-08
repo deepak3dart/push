@@ -9,9 +9,9 @@ self.addEventListener('push', function(e) {
       },
       actions: [
         {action: 'explore', title: 'Explore this new world',
-          icon: 'images/outline_check_circle_black_24dp.png'},
+          icon: 'images/check.png'},
         {action: 'close', title: 'Close',
-          icon: 'images/icons8-blogger-60.png'},
+          icon: 'images/close.png'},
       ]
     };
     e.waitUntil(
